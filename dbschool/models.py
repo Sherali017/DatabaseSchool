@@ -1,6 +1,5 @@
 from django.db import models
 from address.models import SchoolModel
-from django.contrib.auth.models import User, Group
 import datetime
 from dbschool.choices import *
 
@@ -89,7 +88,7 @@ class TakesModel(models.Model):
         verbose_name_plural = 'Baholar'
 
 
-class MainModel(models.Model):
+class DarsJadvaliModel(models.Model):
     school = models.ForeignKey(SchoolModel, on_delete=models.PROTECT)
     quarter = models.ManyToManyField(QuartersModel)
     teacher = models.ForeignKey(TeacherModel, on_delete=models.PROTECT)

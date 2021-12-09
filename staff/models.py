@@ -1,6 +1,5 @@
 from django.db import models
 
-from django.db import models
 
 from address.models import SchoolModel
 from dbschool.models import ClassesModel
